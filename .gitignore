@@ -1,0 +1,28 @@
+# Scripts de développement
+*.py
+*.pyw
+*.js
+pizza-server.js
+serve.py
+
+# PDFs personnels
+*.pdf
+
+# Dossiers de travail
+photos-google-business/
+photos-finales/
+photos-preview/
+.claude/
+
+# Photos brutes originales
+20230926_*
+20240109_*
+20240115_*
+20240123_*
+20240227_*
+20250121_*
+20250128_*
+20250425_*
+
+# Config serveur
+netlify.toml
