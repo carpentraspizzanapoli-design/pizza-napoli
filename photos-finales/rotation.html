@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Rotation Photos</title>
+<style>
+* { box-sizing:border-box; margin:0; padding:0 }
+body { background:#0a0a0a; font-family:Arial,sans-serif; padding:20px }
+h1 { text-align:center; color:#d4af37; font-size:16px; letter-spacing:4px; margin-bottom:4px; font-weight:normal }
+.sub { text-align:center; color:#555; font-size:11px; margin-bottom:20px }
+.grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(200px,1fr)); gap:10px }
+.card { background:#141414; border:2px solid #222; border-radius:4px; padding:8px }
+.card.changed { border-color:#d4af37 }
+.wrap { width:100%; aspect-ratio:1; overflow:hidden; background:#000; display:flex; align-items:center; justify-content:center }
+.wrap img { width:100%; height:100%; object-fit:cover; transition:transform 0.4s }
+.name { color:#666; font-size:9px; text-align:center; margin:6px 0 5px; letter-spacing:1px }
+.btns { display:flex; gap:4px }
+.btns button { flex:1; padding:7px 0; font-size:11px; font-weight:bold; cursor:pointer; border:1px solid #333; border-radius:2px; background:#1a1a1a; color:#d4af37; letter-spacing:1px }
+.btns button:hover { background:#d4af37; color:#000 }
+.deg { text-align:center; font-size:12px; margin-top:5px; color:#d4af37; font-weight:bold }
+.footer { position:sticky; bottom:0; background:#0a0a0a; border-top:1px solid #222; padding:12px; text-align:center; margin-top:20px }
+#nb { color:#d4af37; font-size:12px; letter-spacing:2px; margin-bottom:8px }
+#btn-save { background:#d4af37; color:#000; border:none; padding:10px 36px; font-size:13px; letter-spacing:3px; cursor:pointer; font-weight:bold }
+#btn-save:hover { background:#fff }
+#output { margin-top:12px; color:#aaa; font-size:12px; line-height:1.8 }
+</style>
+</head>
+<body>
+<h1>CORRECTION ROTATION &mdash; PIZZA NAPOLI</h1>
+<p class="sub">Clique &#8592; GAUCHE ou DROITE &#8594; pour tourner &bull; Bordure dor&eacute;e = modifi&eacute;</p>
+<div class="grid">
+<div class="card" id="cp0"><div class="wrap"><img id="p0" src="pizza-burger.jpg"></div><div class="name">PIZZA BURGER</div><div class="btns"><button onclick="turn('p0',-90)">&#8592; GAUCHE</button><button onclick="turn('p0',90)">DROITE &#8594;</button></div><div class="deg" id="dp0">0&deg;</div></div>
+<div class="card" id="cp1"><div class="wrap"><img id="p1" src="pizza-cochonnaille.jpg"></div><div class="name">PIZZA COCHONNAILLE</div><div class="btns"><button onclick="turn('p1',-90)">&#8592; GAUCHE</button><button onclick="turn('p1',90)">DROITE &#8594;</button></div><div class="deg" id="dp1">0&deg;</div></div>
+<div class="card" id="cp2"><div class="wrap"><img id="p2" src="pizza-megafromage.jpg"></div><div class="name">PIZZA MEGAFROMAGE</div><div class="btns"><button onclick="turn('p2',-90)">&#8592; GAUCHE</button><button onclick="turn('p2',90)">DROITE &#8594;</button></div><div class="deg" id="dp2">0&deg;</div></div>
+<div class="card" id="cp3"><div class="wrap"><img id="p3" src="pizza-milano.jpg"></div><div class="name">PIZZA MILANO</div><div class="btns"><button onclick="turn('p3',-90)">&#8592; GAUCHE</button><button onclick="turn('p3',90)">DROITE &#8594;</button></div><div class="deg" id="dp3">0&deg;</div></div>
+<div class="card" id="cp4"><div class="wrap"><img id="p4" src="pizza-orientale.jpg"></div><div class="name">PIZZA ORIENTALE</div><div class="btns"><button onclick="turn('p4',-90)">&#8592; GAUCHE</button><button onclick="turn('p4',90)">DROITE &#8594;</button></div><div class="deg" id="dp4">0&deg;</div></div>
+<div class="card" id="cp5"><div class="wrap"><img id="p5" src="pizza-reine.jpg"></div><div class="name">PIZZA REINE</div><div class="btns"><button onclick="turn('p5',-90)">&#8592; GAUCHE</button><button onclick="turn('p5',90)">DROITE &#8594;</button></div><div class="deg" id="dp5">0&deg;</div></div>
+<div class="card" id="cp6"><div class="wrap"><img id="p6" src="pizza-royale.jpg"></div><div class="name">PIZZA ROYALE</div><div class="btns"><button onclick="turn('p6',-90)">&#8592; GAUCHE</button><button onclick="turn('p6',90)">DROITE &#8594;</button></div><div class="deg" id="dp6">0&deg;</div></div>
+<div class="card" id="cp7"><div class="wrap"><img id="p7" src="pizza-saint-jacques.jpg"></div><div class="name">PIZZA SAINT JACQUES</div><div class="btns"><button onclick="turn('p7',-90)">&#8592; GAUCHE</button><button onclick="turn('p7',90)">DROITE &#8594;</button></div><div class="deg" id="dp7">0&deg;</div></div>
+<div class="card" id="cp8"><div class="wrap"><img id="p8" src="pizza-tartufo.jpg"></div><div class="name">PIZZA TARTUFO</div><div class="btns"><button onclick="turn('p8',-90)">&#8592; GAUCHE</button><button onclick="turn('p8',90)">DROITE &#8594;</button></div><div class="deg" id="dp8">0&deg;</div></div>
+<div class="card" id="cp9"><div class="wrap"><img id="p9" src="pizzeria-ambiance-1.jpg"></div><div class="name">PIZZERIA AMBIANCE 1</div><div class="btns"><button onclick="turn('p9',-90)">&#8592; GAUCHE</button><button onclick="turn('p9',90)">DROITE &#8594;</button></div><div class="deg" id="dp9">0&deg;</div></div>
+<div class="card" id="cp10"><div class="wrap"><img id="p10" src="pizzeria-pizza-01.jpg"></div><div class="name">PIZZERIA PIZZA 01</div><div class="btns"><button onclick="turn('p10',-90)">&#8592; GAUCHE</button><button onclick="turn('p10',90)">DROITE &#8594;</button></div><div class="deg" id="dp10">0&deg;</div></div>
+<div class="card" id="cp11"><div class="wrap"><img id="p11" src="pizzeria-pizza-02.jpg"></div><div class="name">PIZZERIA PIZZA 02</div><div class="btns"><button onclick="turn('p11',-90)">&#8592; GAUCHE</button><button onclick="turn('p11',90)">DROITE &#8594;</button></div><div class="deg" id="dp11">0&deg;</div></div>
+<div class="card" id="cp12"><div class="wrap"><img id="p12" src="pizzeria-pizza-03.jpg"></div><div class="name">PIZZERIA PIZZA 03</div><div class="btns"><button onclick="turn('p12',-90)">&#8592; GAUCHE</button><button onclick="turn('p12',90)">DROITE &#8594;</button></div><div class="deg" id="dp12">0&deg;</div></div>
+<div class="card" id="cp13"><div class="wrap"><img id="p13" src="pizzeria-pizza-04.jpg"></div><div class="name">PIZZERIA PIZZA 04</div><div class="btns"><button onclick="turn('p13',-90)">&#8592; GAUCHE</button><button onclick="turn('p13',90)">DROITE &#8594;</button></div><div class="deg" id="dp13">0&deg;</div></div>
+<div class="card" id="cp14"><div class="wrap"><img id="p14" src="pizzeria-pizza-05.jpg"></div><div class="name">PIZZERIA PIZZA 05</div><div class="btns"><button onclick="turn('p14',-90)">&#8592; GAUCHE</button><button onclick="turn('p14',90)">DROITE &#8594;</button></div><div class="deg" id="dp14">0&deg;</div></div>
+<div class="card" id="cp15"><div class="wrap"><img id="p15" src="pizzeria-pizza-06.jpg"></div><div class="name">PIZZERIA PIZZA 06</div><div class="btns"><button onclick="turn('p15',-90)">&#8592; GAUCHE</button><button onclick="turn('p15',90)">DROITE &#8594;</button></div><div class="deg" id="dp15">0&deg;</div></div>
+<div class="card" id="cp16"><div class="wrap"><img id="p16" src="pizzeria-pizza-07.jpg"></div><div class="name">PIZZERIA PIZZA 07</div><div class="btns"><button onclick="turn('p16',-90)">&#8592; GAUCHE</button><button onclick="turn('p16',90)">DROITE &#8594;</button></div><div class="deg" id="dp16">0&deg;</div></div>
+<div class="card" id="cp17"><div class="wrap"><img id="p17" src="pizzeria-pizza-08.jpg"></div><div class="name">PIZZERIA PIZZA 08</div><div class="btns"><button onclick="turn('p17',-90)">&#8592; GAUCHE</button><button onclick="turn('p17',90)">DROITE &#8594;</button></div><div class="deg" id="dp17">0&deg;</div></div>
+<div class="card" id="cp18"><div class="wrap"><img id="p18" src="pizzeria-pizza-09.jpg"></div><div class="name">PIZZERIA PIZZA 09</div><div class="btns"><button onclick="turn('p18',-90)">&#8592; GAUCHE</button><button onclick="turn('p18',90)">DROITE &#8594;</button></div><div class="deg" id="dp18">0&deg;</div></div>
+<div class="card" id="cp19"><div class="wrap"><img id="p19" src="pizzeria-pizza-10.jpg"></div><div class="name">PIZZERIA PIZZA 10</div><div class="btns"><button onclick="turn('p19',-90)">&#8592; GAUCHE</button><button onclick="turn('p19',90)">DROITE &#8594;</button></div><div class="deg" id="dp19">0&deg;</div></div>
+<div class="card" id="cp20"><div class="wrap"><img id="p20" src="pizzeria-pizza-11.jpg"></div><div class="name">PIZZERIA PIZZA 11</div><div class="btns"><button onclick="turn('p20',-90)">&#8592; GAUCHE</button><button onclick="turn('p20',90)">DROITE &#8594;</button></div><div class="deg" id="dp20">0&deg;</div></div>
+<div class="card" id="cp21"><div class="wrap"><img id="p21" src="pizzeria-pizza-12.jpg"></div><div class="name">PIZZERIA PIZZA 12</div><div class="btns"><button onclick="turn('p21',-90)">&#8592; GAUCHE</button><button onclick="turn('p21',90)">DROITE &#8594;</button></div><div class="deg" id="dp21">0&deg;</div></div>
+</div>
+<div class="footer">
+<div id="nb">0 photo(s) modifi&eacute;e(s)</div>
+<button id="btn-save" onclick="save()">VALIDER &amp; APPLIQUER</button>
+<div id="output"></div>
+</div>
+<script src="rotation.js"></script>
+</body>
+</html>

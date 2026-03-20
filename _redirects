@@ -1,0 +1,3 @@
+# Netlify redirects
+# Trailing slash normalization is handled automatically by Netlify
+# (each page has its own directory/index.html)

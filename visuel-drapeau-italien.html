@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Pizza Napoli Carpentras — Visuel Drapeau Italien</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #1a1a1a; display: flex; flex-direction: column; align-items: center; gap: 40px; padding: 40px 20px; font-family: 'Georgia', serif; }
+
+  /* ===== FORMAT CARRÉ — réseaux sociaux ===== */
+  .card {
+    width: 600px;
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 8px 40px rgba(0,0,0,.6);
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Tricolore vertical */
+  .flag-bg {
+    position: absolute;
+    inset: 0;
+    display: flex;
+  }
+  .flag-bg .vert  { flex: 1; background: #009246; }
+  .flag-bg .blanc { flex: 1; background: #fff; }
+  .flag-bg .rouge { flex: 1; background: #CE2B37; }
+
+  /* Overlay sombre pour lisibilité */
+  .overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.42);
+  }
+
+  /* Contenu centré */
+  .content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+    padding: 40px;
+    color: #fff;
+  }
+
+  .pizza-icon {
+    font-size: 72px;
+    margin-bottom: 12px;
+    filter: drop-shadow(0 2px 8px rgba(0,0,0,.5));
+  }
+
+  .brand {
+    font-family: 'Georgia', serif;
+    font-size: 42px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    text-shadow: 0 2px 12px rgba(0,0,0,.7);
+    line-height: 1.1;
+  }
+  .brand span {
+    display: block;
+    font-size: 28px;
+    font-weight: 400;
+    letter-spacing: 0.12em;
+    color: rgba(255,255,255,.85);
+    margin-top: 6px;
+  }
+
+  .divider {
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(90deg, #009246, #fff, #CE2B37);
+    margin: 20px auto;
+    border-radius: 2px;
+  }
+
+  .tagline {
+    font-size: 16px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,.9);
+    text-shadow: 0 1px 6px rgba(0,0,0,.6);
+  }
+
+  .tel {
+    margin-top: 24px;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    color: #fff;
+    text-shadow: 0 2px 8px rgba(0,0,0,.7);
+    background: rgba(0,0,0,.3);
+    padding: 10px 24px;
+    border-radius: 30px;
+    border: 1px solid rgba(255,255,255,.3);
+  }
+
+  .bottom-strip {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 8px;
+    display: flex;
+  }
+  .bottom-strip div { flex: 1; }
+  .bs-vert  { background: #009246; }
+  .bs-blanc { background: #fff; }
+  .bs-rouge { background: #CE2B37; }
+
+  /* ===== FORMAT BANNIÈRE ===== */
+  .banner {
+    width: 900px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 8px 40px rgba(0,0,0,.6);
+  }
+
+  .banner .flag-bg-h {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .banner .flag-bg-h .vert  { flex: 1; background: #009246; }
+  .banner .flag-bg-h .blanc { flex: 1; background: #fff; }
+  .banner .flag-bg-h .rouge { flex: 1; background: #CE2B37; }
+
+  .banner .overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,.45);
+  }
+
+  .banner .content {
+    flex-direction: row;
+    gap: 40px;
+    padding: 30px 60px;
+  }
+
+  .banner .pizza-icon { font-size: 90px; margin: 0; }
+
+  .banner .text { text-align: left; }
+  .banner .brand { font-size: 48px; }
+  .banner .brand span { font-size: 22px; }
+  .banner .tagline { font-size: 14px; }
+
+  .label { color: #888; font-size: 12px; text-align: center; font-family: monospace; margin-top: -30px; }
+</style>
+</head>
+<body>
+
+  <p class="label">FORMAT CARRÉ — 600×600px (Instagram, Facebook)</p>
+
+  <div class="card">
+    <div class="flag-bg">
+      <div class="vert"></div>
+      <div class="blanc"></div>
+      <div class="rouge"></div>
+    </div>
+    <div class="overlay"></div>
+    <div class="content">
+      <div class="pizza-icon">🍕</div>
+      <div class="brand">
+        Pizza Napoli
+        <span>Carpentras</span>
+      </div>
+      <div class="divider"></div>
+      <div class="tagline">Pizza artisanale · Livraison 7j/7</div>
+      <div class="tel">07 61 08 36 08</div>
+    </div>
+    <div class="bottom-strip">
+      <div class="bs-vert"></div>
+      <div class="bs-blanc"></div>
+      <div class="bs-rouge"></div>
+    </div>
+  </div>
+
+  <p class="label">FORMAT BANNIÈRE — 900×300px (Facebook cover, site web)</p>
+
+  <div class="banner">
+    <div class="flag-bg-h">
+      <div class="vert"></div>
+      <div class="blanc"></div>
+      <div class="rouge"></div>
+    </div>
+    <div class="overlay"></div>
+    <div class="content">
+      <div class="pizza-icon">🍕</div>
+      <div class="text">
+        <div class="brand">
+          Pizza Napoli
+          <span>Carpentras</span>
+        </div>
+        <div class="divider"></div>
+        <div class="tagline">Pizza artisanale · Livraison 7j/7 dès 17h30</div>
+        <div class="tel">07 61 08 36 08</div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
