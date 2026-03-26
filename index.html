@@ -35,7 +35,7 @@
 <link rel="preload" as="image" href="hero1.jpg" fetchpriority="high">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Cormorant+Garamond:wght@300;400;600&family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Josefin+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
 <style>
 :root{--rosso:#CE2B37;--rosso-scuro:#A01F2A;--verde:#00703C;--verde-scuro:#00552D;--crema:#FFFDF7;--oro:#C8972A;--oro-clair:#E8C060;--brun:#1A1A1A;--blanc:#FFFFFF;--wa:#25D366;}
 /* legacy aliases kept for one-line compatibility */
@@ -128,7 +128,7 @@ nav{width:100%;padding:1.2rem 4rem;display:flex;align-items:center;justify-conte
 .hero-badge{font-size:.72rem;letter-spacing:.28em;text-transform:uppercase;color:var(--oro-clair);background:rgba(0,0,0,.55);border:1px solid rgba(200,151,42,.7);padding:.5rem 1.8rem;margin-bottom:1.5rem;opacity:0;animation:fadeUp .8s ease forwards;animation-delay:1.8s;position:relative;z-index:2;text-shadow:0 2px 6px rgba(0,0,0,.9);font-weight:600;}
 .hero h1{font-family:'Cinzel',serif;font-size:clamp(2.8rem,7vw,6.5rem);font-style:normal;color:var(--blanc);line-height:1.05;margin-bottom:.3em;opacity:0;animation:fadeUp .9s ease forwards;animation-delay:2s;position:relative;z-index:2;text-shadow:0 4px 30px rgba(0,0,0,.5);}
 .hero h1 em{color:var(--oro-clair);font-style:normal;display:block;}
-.hero-sub{font-family:'Cormorant Garamond',serif;font-size:clamp(1.1rem,2.5vw,1.6rem);color:rgba(255,255,255,.85);letter-spacing:.1em;margin-bottom:2.5rem;opacity:0;animation:fadeUp .9s ease forwards;animation-delay:2.2s;position:relative;z-index:2;}
+.hero-sub{font-family:'Josefin Sans',serif;font-size:clamp(1.1rem,2.5vw,1.6rem);color:rgba(255,255,255,.85);letter-spacing:.1em;margin-bottom:2.5rem;opacity:0;animation:fadeUp .9s ease forwards;animation-delay:2.2s;position:relative;z-index:2;}
 .hero-btns{display:flex;gap:1rem;flex-wrap:wrap;justify-content:center;opacity:0;animation:fadeUp .9s ease forwards;animation-delay:2.4s;position:relative;z-index:2;}
 .btn-primary{background:var(--rouge);color:white;padding:1rem 2.5rem;font-size:.75rem;letter-spacing:.2em;text-transform:uppercase;text-decoration:none;font-weight:600;transition:all .3s;border:2px solid var(--rouge);}
 .btn-primary:hover{background:var(--rouge-fonce);border-color:var(--rouge-fonce);transform:translateY(-2px);box-shadow:0 8px 25px rgba(192,57,43,.4);}
@@ -148,14 +148,14 @@ nav{width:100%;padding:1.2rem 4rem;display:flex;align-items:center;justify-conte
 .info-item.visible{opacity:1;transform:translateY(0);}
 .info-icon{font-size:1.8rem;}
 .info-text h4{color:var(--oro-clair);font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;margin-bottom:.3rem;}
-.info-text p{color:rgba(255,255,255,.9);font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:700;}
+.info-text p{color:rgba(255,255,255,.9);font-family:'Josefin Sans',serif;font-size:2rem;font-weight:700;}
 .info-text p a{color:var(--blanc);text-decoration:none;}
 .info-text p a[href^="tel"]{font-size:2.2rem;font-weight:700;letter-spacing:.04em;color:var(--oro-clair);}
 
 /* SECTIONS */
 section{padding:6rem 4rem;}
 .section-tag{font-size:.65rem;letter-spacing:.3em;text-transform:uppercase;color:var(--verde);margin-bottom:.8rem;display:block;}
-.section-title{font-family:'Playfair Display',serif;font-size:clamp(2.2rem,5vw,4rem);line-height:1.1;margin-bottom:1.5rem;color:var(--brun);}
+.section-title{font-family:'Cinzel',serif;font-size:clamp(2.2rem,5vw,4rem);line-height:1.1;margin-bottom:1.5rem;color:var(--brun);}
 .section-title em{color:var(--rouge);font-style:italic;}
 
 /* ABOUT */
@@ -164,12 +164,12 @@ section{padding:6rem 4rem;}
 .about-img{width:100%;height:100%;object-fit:cover;border-radius:2px;}
 .about-img-accent{position:absolute;width:200px;height:200px;right:-2rem;bottom:-2rem;background:var(--rouge);z-index:-1;border-radius:2px;}
 .about-badge{position:absolute;top:-1.5rem;right:2rem;background:var(--or);color:var(--brun);padding:1.2rem 1.5rem;text-align:center;border-radius:2px;box-shadow:0 8px 30px rgba(0,0,0,.15);}
-.about-badge .num{font-family:'Playfair Display',serif;font-size:2.5rem;font-weight:900;line-height:1;display:block;}
+.about-badge .num{font-family:'Cinzel',serif;font-size:2.5rem;font-weight:900;line-height:1;display:block;}
 .about-badge .label{font-size:.6rem;letter-spacing:.15em;text-transform:uppercase;}
-.about-text p{font-family:'Cormorant Garamond',serif;font-size:1.15rem;line-height:1.8;color:#3D3328;margin-bottom:1.2rem;}
+.about-text p{font-family:'Josefin Sans',serif;font-size:1.15rem;line-height:1.8;color:#3D3328;margin-bottom:1.2rem;}
 .counter-row{display:flex;gap:2.5rem;margin-top:2rem;flex-wrap:wrap;}
 .counter-box{text-align:center;}
-.counter-num{font-family:'Playfair Display',serif;font-size:2.2rem;font-weight:900;color:var(--rouge);line-height:1;display:block;}
+.counter-num{font-family:'Cinzel',serif;font-size:2.2rem;font-weight:900;color:var(--rouge);line-height:1;display:block;}
 .counter-lbl{font-size:.65rem;letter-spacing:.15em;text-transform:uppercase;color:#5A5248;margin-top:.2rem;display:block;}
 .about-features{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:2rem;}
 .feature{display:flex;align-items:flex-start;gap:.8rem;padding:1rem;background:white;border-left:3px solid var(--or);border-radius:0 2px 2px 0;}
@@ -179,7 +179,7 @@ section{padding:6rem 4rem;}
 
 /* MENU */
 .menu-section{background:var(--brun);position:relative;overflow:hidden;}
-.menu-section::before{content:'MENU';position:absolute;font-family:'Playfair Display',serif;font-size:20rem;font-style:italic;color:rgba(255,255,255,.02);top:50%;left:50%;transform:translate(-50%,-50%);white-space:nowrap;pointer-events:none;}
+.menu-section::before{content:'MENU';position:absolute;font-family:'Cinzel',serif;font-size:20rem;font-style:italic;color:rgba(255,255,255,.02);top:50%;left:50%;transform:translate(-50%,-50%);white-space:nowrap;pointer-events:none;}
 .menu-section .section-title{color:var(--or);}
 .menu-section .section-tag{color:var(--or-clair);}
 .menu-header{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:2rem;flex-wrap:wrap;gap:1.5rem;}
@@ -192,22 +192,22 @@ section{padding:6rem 4rem;}
 .menu-search:focus{border-color:var(--or);}
 .search-icon{position:absolute;left:1rem;top:50%;transform:translateY(-50%);font-size:1rem;opacity:.5;pointer-events:none;}
 .menu-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;}
-.menu-category-title{grid-column:1/-1;font-family:'Playfair Display',serif;font-size:1.6rem;font-style:italic;color:var(--or);border-bottom:1px solid rgba(212,168,83,.25);padding-bottom:.6rem;margin-top:1.5rem;}
+.menu-category-title{grid-column:1/-1;font-family:'Cinzel',serif;font-size:1.6rem;font-style:italic;color:var(--or);border-bottom:1px solid rgba(212,168,83,.25);padding-bottom:.6rem;margin-top:1.5rem;}
 .menu-card{background:rgba(255,255,255,.05);border:1px solid rgba(212,168,83,.15);position:relative;opacity:0;transform:translateY(20px);transition:opacity .5s ease,transform .5s ease,background .3s,border-color .3s;overflow:hidden;display:flex;flex-direction:column;}
 .menu-card.visible{opacity:1;transform:translateY(0);}
 .menu-card:hover{background:rgba(255,255,255,.09);border-color:rgba(212,168,83,.4);border-top:3px solid var(--rosso);transform:translateY(-4px);}
 .menu-card-img{width:100%;height:180px;object-fit:cover;display:block;transition:transform .5s ease;}
 .menu-card:hover .menu-card-img{transform:scale(1.05);}
 .menu-card-body{padding:1.2rem 1.4rem 1.4rem;flex:1;display:flex;flex-direction:column;}
-.menu-card h3{font-family:'Playfair Display',serif;font-size:1.2rem;font-style:italic;color:white;margin-bottom:.4rem;}
-.menu-card p{font-family:'Cormorant Garamond',serif;font-size:.95rem;color:rgba(255,255,255,.55);line-height:1.5;margin-bottom:.8rem;flex:1;}
+.menu-card h3{font-family:'Cinzel',serif;font-size:1.2rem;font-style:italic;color:white;margin-bottom:.4rem;}
+.menu-card p{font-family:'Josefin Sans',serif;font-size:.95rem;color:rgba(255,255,255,.55);line-height:1.5;margin-bottom:.8rem;flex:1;}
 .menu-card-price{display:flex;align-items:baseline;gap:.5rem;flex-wrap:wrap;margin-top:auto;}
 .price-item{display:flex;flex-direction:column;align-items:center;}
-.price-val{font-size:1.1rem;color:var(--or);font-family:'Playfair Display',serif;font-weight:700;}
+.price-val{font-size:1.1rem;color:var(--or);font-family:'Cinzel',serif;font-weight:700;}
 .price-size{font-size:.6rem;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.3);margin-top:.1rem;}
 .price-sep{color:rgba(255,255,255,.2);font-size:.9rem;align-self:center;}
 .menu-badge{position:absolute;top:.8rem;right:.8rem;background:var(--rouge);color:white;font-size:.55rem;letter-spacing:.1em;text-transform:uppercase;padding:.25rem .6rem;border-radius:1px;font-weight:600;z-index:2;}
-.menu-no-results{grid-column:1/-1;text-align:center;color:rgba(255,255,255,.35);font-size:1rem;padding:3rem 0;font-family:'Cormorant Garamond',serif;}
+.menu-no-results{grid-column:1/-1;text-align:center;color:rgba(255,255,255,.35);font-size:1rem;padding:3rem 0;font-family:'Josefin Sans',serif;}
 
 /* TESTIMONIALS */
 .testimonials{background:white;text-align:center;}
@@ -220,8 +220,8 @@ section{padding:6rem 4rem;}
 .testi-dots{display:flex;gap:.5rem;align-items:center;}
 .testi-dot{width:9px;height:9px;border-radius:50%;background:rgba(0,0,0,.18);border:none;cursor:pointer;padding:0;transition:all .3s;}
 .testi-dot.active{background:var(--oro);width:22px;border-radius:5px;}
-.testi-quote{font-family:'Playfair Display',serif;font-size:4rem;color:var(--or);line-height:.5;margin-bottom:1rem;}
-.testi-text{font-family:'Cormorant Garamond',serif;font-size:1.05rem;line-height:1.7;color:#3D3328;margin-bottom:1.2rem;}
+.testi-quote{font-family:'Cinzel',serif;font-size:4rem;color:var(--or);line-height:.5;margin-bottom:1rem;}
+.testi-text{font-family:'Josefin Sans',serif;font-size:1.05rem;line-height:1.7;color:#3D3328;margin-bottom:1.2rem;}
 .testi-author{font-size:.7rem;letter-spacing:.15em;text-transform:uppercase;color:var(--rouge);font-weight:600;}
 .testi-stars{color:var(--or);font-size:.9rem;margin-bottom:.8rem;}
 .google-reviews-link{display:inline-flex;align-items:center;gap:.5rem;margin-top:2.5rem;padding:.7rem 1.8rem;border:2px solid var(--or);color:var(--brun);text-decoration:none;font-size:.75rem;letter-spacing:.15em;text-transform:uppercase;font-weight:600;border-radius:2px;transition:all .3s;}
@@ -233,7 +233,7 @@ section{padding:6rem 4rem;}
 .commande-section::after{content:'🍕';position:absolute;font-size:15rem;top:50%;right:-3%;transform:translateY(-50%) rotate(15deg);opacity:.07;}
 .commande-section .section-title{color:white;}
 .commande-section .section-tag{color:rgba(255,255,255,.7);}
-.commande-section p{font-family:'Cormorant Garamond',serif;font-size:1.2rem;color:rgba(255,255,255,.85);margin-bottom:2.5rem;position:relative;}
+.commande-section p{font-family:'Josefin Sans',serif;font-size:1.2rem;color:rgba(255,255,255,.85);margin-bottom:2.5rem;position:relative;}
 .commande-btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;position:relative;}
 .btn-white{background:white;color:var(--rouge);padding:1rem 2.5rem;font-size:.75rem;letter-spacing:.2em;text-transform:uppercase;text-decoration:none;font-weight:600;border:2px solid white;transition:all .3s;font-family:'Josefin Sans',sans-serif;display:inline-flex;align-items:center;gap:.6rem;}
 .btn-white:hover{background:var(--brun);border-color:var(--brun);color:white;transform:translateY(-2px);}
@@ -263,7 +263,7 @@ section{padding:6rem 4rem;}
 .contact-list li:last-child{border-bottom:none;}
 .contact-list .ci{font-size:1.2rem;flex-shrink:0;}
 .contact-list .ct h5{font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:var(--or);margin-bottom:.3rem;}
-.contact-list .ct p{font-family:'Cormorant Garamond',serif;font-size:1.55rem;line-height:1.6;}
+.contact-list .ct p{font-family:'Josefin Sans',serif;font-size:1.55rem;line-height:1.6;}
 .contact-list .ct a{color:rgba(255,255,255,.8);text-decoration:none;transition:color .3s;}
 .contact-list .ct a:hover{color:var(--or);}
 .contact-list .ct a[href^="tel"]{font-size:2.8rem;font-weight:700;letter-spacing:.05em;color:var(--or);}
@@ -285,7 +285,7 @@ footer{background:var(--verde-scuro);padding:3rem 4rem;display:flex;justify-cont
 .faq-item summary::after{content:'+';font-size:1.4rem;color:var(--rouge);font-weight:300;transition:transform .3s;flex-shrink:0;}
 .faq-item[open] summary::after{transform:rotate(45deg);}
 .faq-item[open] summary{color:var(--rouge);}
-.faq-item div{padding:0 1.5rem 1.2rem;font-family:'Cormorant Garamond',serif;font-size:1.05rem;color:#3D3328;line-height:1.7;}
+.faq-item div{padding:0 1.5rem 1.2rem;font-family:'Josefin Sans',serif;font-size:1.05rem;color:#3D3328;line-height:1.7;}
 .faq-item a{color:var(--rouge);text-decoration:none;}
 .faq-item a:hover{text-decoration:underline;}
 
@@ -325,8 +325,8 @@ footer{background:var(--verde-scuro);padding:3rem 4rem;display:flex;justify-cont
 .pom-box{background:var(--rosso);border-radius:16px;padding:2.5rem 2rem;max-width:420px;width:100%;text-align:center;position:relative;border:1px solid rgba(255,255,255,.25);}
 .pom-close{position:absolute;top:.9rem;right:1rem;background:none;border:none;color:rgba(255,255,255,.4);font-size:1.4rem;cursor:pointer;line-height:1;}
 .pom-icon{font-size:3rem;margin-bottom:.8rem;}
-.pom-title{font-family:'Playfair Display',serif;color:var(--or);font-size:1.5rem;margin-bottom:1rem;line-height:1.2;}
-.pom-text{color:rgba(255,255,255,.8);font-family:'Cormorant Garamond',serif;font-size:1.15rem;line-height:1.7;margin-bottom:1.8rem;}
+.pom-title{font-family:'Cinzel',serif;color:var(--or);font-size:1.5rem;margin-bottom:1rem;line-height:1.2;}
+.pom-text{color:rgba(255,255,255,.8);font-family:'Josefin Sans',serif;font-size:1.15rem;line-height:1.7;margin-bottom:1.8rem;}
 .pom-call{display:inline-flex;align-items:center;gap:.6rem;background:var(--rouge);color:white;padding:1rem 2rem;font-family:'Josefin Sans',sans-serif;font-size:.8rem;letter-spacing:.18em;text-transform:uppercase;text-decoration:none;font-weight:600;border-radius:4px;transition:background .2s;}
 .pom-call:hover{background:#c0392b;}
 /* Écran pré-commande */
@@ -334,14 +334,14 @@ footer{background:var(--verde-scuro);padding:3rem 4rem;display:flex;justify-cont
 #pre-order-notice.show{display:flex;}
 .pon-box{max-width:520px;width:100%;text-align:center;}
 .pon-icon{font-size:3.5rem;margin-bottom:1rem;}
-.pon-title{font-family:'Playfair Display',serif;font-size:1.6rem;color:var(--brun);margin-bottom:1.5rem;line-height:1.3;}
-.pon-card{background:white;border-left:4px solid var(--or);border-radius:8px;padding:1.4rem 1.6rem;text-align:left;font-family:'Cormorant Garamond',serif;font-size:1.15rem;color:#3D3328;line-height:1.8;margin-bottom:2rem;box-shadow:0 2px 12px rgba(0,0,0,.07);}
+.pon-title{font-family:'Cinzel',serif;font-size:1.6rem;color:var(--brun);margin-bottom:1.5rem;line-height:1.3;}
+.pon-card{background:white;border-left:4px solid var(--or);border-radius:8px;padding:1.4rem 1.6rem;text-align:left;font-family:'Josefin Sans',serif;font-size:1.15rem;color:#3D3328;line-height:1.8;margin-bottom:2rem;box-shadow:0 2px 12px rgba(0,0,0,.07);}
 .pon-card strong{color:var(--rouge);}
 .pon-card a{color:var(--rouge);text-decoration:none;font-weight:700;}
 .pon-btn{background:var(--rouge);color:white;border:none;padding:1.1rem 2.8rem;font-family:'Josefin Sans',sans-serif;font-size:.8rem;letter-spacing:.2em;text-transform:uppercase;font-weight:600;cursor:pointer;transition:background .2s;border-radius:4px;}
 .pon-btn:hover{background:#c0392b;}
 .ord-header{background:var(--brun);padding:1rem 2rem;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:100;border-bottom:1px solid rgba(212,168,83,.3);}
-.ord-logo{font-family:'Playfair Display',serif;font-style:italic;color:var(--or);font-size:1.3rem;}
+.ord-logo{font-family:'Cinzel',serif;font-style:italic;color:var(--or);font-size:1.3rem;}
 .ord-close{color:rgba(255,255,255,.7);background:none;border:none;font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;display:flex;align-items:center;gap:.4rem;cursor:pointer;transition:color .2s;font-family:'Josefin Sans',sans-serif;}
 .ord-close:hover{color:var(--or);}
 .steps-bar{background:white;border-bottom:1px solid rgba(0,0,0,.08);padding:.8rem 2rem;display:flex;position:sticky;top:56px;z-index:99;}
@@ -358,7 +358,7 @@ footer{background:var(--verde-scuro);padding:3rem 4rem;display:flex;justify-cont
 .form-section{display:none;}
 .form-section.active{display:block;}
 .ord-card{background:white;border-radius:4px;padding:1.8rem;margin-bottom:1.2rem;box-shadow:0 2px 12px rgba(0,0,0,.06);}
-.card-title{font-family:'Playfair Display',serif;font-size:1.4rem;font-style:italic;color:var(--brun);margin-bottom:1.2rem;display:flex;align-items:center;gap:.6rem;}
+.card-title{font-family:'Cinzel',serif;font-size:1.4rem;font-style:italic;color:var(--brun);margin-bottom:1.2rem;display:flex;align-items:center;gap:.6rem;}
 .card-title span{font-size:1.5rem;}
 .field-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1rem;}
 .field-row.single{grid-template-columns:1fr;}
@@ -393,7 +393,7 @@ footer{background:var(--verde-scuro);padding:3rem 4rem;display:flex;justify-cont
 .pizza-main{display:flex;align-items:center;padding:.8rem 1rem;gap:.8rem;}
 .pizza-info{flex:1;min-width:0;}
 .pizza-name{font-weight:600;font-size:.88rem;color:var(--brun);}
-.pizza-ingr{font-size:.75rem;color:#aaa;margin-top:.1rem;font-family:'Cormorant Garamond',serif;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.pizza-ingr{font-size:.75rem;color:#aaa;margin-top:.1rem;font-family:'Josefin Sans',serif;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
 .pizza-right{display:flex;align-items:center;gap:.6rem;flex-shrink:0;}
 .size-select{padding:.3rem .4rem;border:1.5px solid #ddd;border-radius:3px;font-family:'Josefin Sans',sans-serif;font-size:.7rem;font-weight:600;color:var(--brun);background:white;cursor:pointer;outline:none;}
 .pizza-row.has-qty .size-select{border-color:rgba(212,168,83,.6);}
@@ -402,7 +402,7 @@ footer{background:var(--verde-scuro);padding:3rem 4rem;display:flex;justify-cont
 .qty-btn:hover,.qty-btn.plus{border-color:var(--rouge);color:var(--rouge);}
 .qty-btn.plus:hover{background:var(--rouge);color:white;}
 .qty-val{min-width:22px;text-align:center;font-weight:700;font-size:.9rem;color:var(--brun);}
-.pizza-price-tag{font-size:.78rem;color:#bbb;min-width:50px;text-align:right;font-family:'Playfair Display',serif;}
+.pizza-price-tag{font-size:.78rem;color:#bbb;min-width:50px;text-align:right;font-family:'Cinzel',serif;}
 .pizza-row.has-qty .pizza-price-tag{color:var(--rouge);font-weight:700;}
 .perso-btn{background:none;border:1px solid #ddd;border-radius:3px;padding:.25rem .5rem;font-size:.65rem;color:#aaa;cursor:pointer;transition:all .2s;font-family:'Josefin Sans',sans-serif;letter-spacing:.05em;}
 .perso-btn:hover{border-color:var(--brun);color:var(--brun);}
@@ -427,17 +427,17 @@ footer{background:var(--verde-scuro);padding:3rem 4rem;display:flex;justify-cont
 .drink-name{font-weight:600;font-size:.85rem;color:var(--brun);}
 .drink-price-tag{font-size:.75rem;color:#999;margin-top:.1rem;}
 .summary-section{background:white;border-radius:4px;padding:1.8rem;margin-bottom:1.2rem;box-shadow:0 2px 12px rgba(0,0,0,.06);}
-.summary-title{font-family:'Playfair Display',serif;font-size:1.3rem;font-style:italic;color:var(--brun);margin-bottom:1.2rem;}
+.summary-title{font-family:'Cinzel',serif;font-size:1.3rem;font-style:italic;color:var(--brun);margin-bottom:1.2rem;}
 .summary-block{margin-bottom:1.2rem;}
 .summary-block h4{font-size:.65rem;letter-spacing:.15em;text-transform:uppercase;color:var(--rouge);margin-bottom:.6rem;font-weight:600;}
 .summary-line{display:flex;justify-content:space-between;align-items:baseline;padding:.3rem 0;border-bottom:1px solid #f0e8dc;font-size:.85rem;}
 .summary-line:last-child{border-bottom:none;}
-.summary-line .s-price{color:var(--rouge);font-weight:700;font-family:'Playfair Display',serif;}
+.summary-line .s-price{color:var(--rouge);font-weight:700;font-family:'Cinzel',serif;}
 .summary-line .s-sub{font-size:.72rem;color:#aaa;font-style:italic;margin-left:.4rem;}
 .summary-total{display:flex;justify-content:space-between;align-items:center;padding:1rem;background:var(--brun);border-radius:3px;margin-top:1rem;}
 .summary-total .t-label{color:rgba(255,255,255,.7);font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;}
 .summary-total .t-sub{font-size:.65rem;color:rgba(255,255,255,.35);margin-top:.2rem;}
-.summary-total .t-amount{color:var(--or);font-family:'Playfair Display',serif;font-size:1.6rem;font-weight:700;}
+.summary-total .t-amount{color:var(--or);font-family:'Cinzel',serif;font-size:1.6rem;font-weight:700;}
 .empty-note{color:#bbb;font-size:.85rem;font-style:italic;padding:.4rem 0;}
 .wa-info-box{background:#e8f8ef;border:1px solid #b2dfdb;border-radius:4px;padding:.9rem 1.1rem;margin-bottom:1.4rem;font-size:.82rem;color:#2e7d32;line-height:1.6;}
 .wa-info-box strong{display:block;margin-bottom:.2rem;}
@@ -452,7 +452,7 @@ footer{background:var(--verde-scuro);padding:3rem 4rem;display:flex;justify-cont
 #order-overlay.open .ord-sticky{display:flex;}
 .ord-sticky .st-info{color:rgba(255,255,255,.6);font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;}
 .ord-sticky .st-count{font-size:.62rem;color:rgba(255,255,255,.4);margin-top:.1rem;}
-.ord-sticky .st-amount{color:var(--or);font-family:'Playfair Display',serif;font-size:1.3rem;font-weight:700;}
+.ord-sticky .st-amount{color:var(--or);font-family:'Cinzel',serif;font-size:1.3rem;font-weight:700;}
 @media(max-width:600px){
   .field-row{grid-template-columns:1fr;}
   .steps-bar{padding:.5rem .5rem;}
@@ -720,7 +720,7 @@ footer{background:var(--verde-scuro);padding:3rem 4rem;display:flex;justify-cont
   <span class="section-tag reveal" style="display:inline-block;">Avis clients</span>
   <h2 class="section-title reveal">Ce que disent<em> nos clients</em></h2>
   <div class="stars-big reveal"><span class="star-big">★</span><span class="star-big">★</span><span class="star-big">★</span><span class="star-big">★</span><span class="star-big">☆</span></div>
-  <p class="reveal" style="font-family:'Cormorant Garamond',serif;font-size:1.1rem;color:#5A5248;margin-bottom:1rem;">4,2/5 basé sur <strong>271 avis Google vérifiés</strong></p>
+  <p class="reveal" style="font-family:'Josefin Sans',serif;font-size:1.1rem;color:#5A5248;margin-bottom:1rem;">4,2/5 basé sur <strong>271 avis Google vérifiés</strong></p>
   <div class="testi-carousel-wrap">
     <div class="testi-grid" id="testiGrid">
       <div class="testi-card"><div class="testi-quote">"</div><div class="testi-stars">★★★★★</div><p class="testi-text">Une pizza délicieuse et généreuse, la pâte est parfaitement cuite. La livraison était rapide et les pizzas encore bien chaudes à l'arrivée. Je recommande vivement !</p><div class="testi-author">— Marie L., cliente régulière</div></div>
@@ -778,7 +778,7 @@ footer{background:var(--verde-scuro);padding:3rem 4rem;display:flex;justify-cont
   <div style="max-width:900px;margin:0 auto;text-align:center;">
     <span class="section-tag reveal" style="display:inline-block;color:rgba(255,255,255,.5);">Livraison à domicile</span>
     <h2 class="section-title reveal" style="color:white;">Pizza livrée chez vous<em> sur Carpentras et environs</em></h2>
-    <p class="reveal" style="color:rgba(255,255,255,.7);font-family:'Cormorant Garamond',serif;font-size:1.15rem;max-width:650px;margin:1rem auto 1.5rem;line-height:1.7;">Nous livrons votre pizza chaude à domicile, <strong style="color:var(--or);">gratuitement*</strong>, tous les soirs de 19h00 à 22h00. Voici les communes de notre zone de livraison :</p>
+    <p class="reveal" style="color:rgba(255,255,255,.7);font-family:'Josefin Sans',serif;font-size:1.15rem;max-width:650px;margin:1rem auto 1.5rem;line-height:1.7;">Nous livrons votre pizza chaude à domicile, <strong style="color:var(--or);">gratuitement*</strong>, tous les soirs de 19h00 à 22h00. Voici les communes de notre zone de livraison :</p>
     <div class="reveal" style="display:flex;flex-wrap:wrap;gap:.7rem;justify-content:center;margin-bottom:2.5rem;" itemprop="areaServed">
       <span style="background:rgba(212,168,83,.15);border:1px solid rgba(212,168,83,.3);color:var(--or);padding:.45rem 1.1rem;border-radius:30px;font-size:.85rem;font-family:'Josefin Sans',sans-serif;letter-spacing:.08em;">📍 Carpentras</span>
       <a href="/livraison-pizza-pernes-les-fontaines/" style="background:rgba(212,168,83,.15);border:1px solid rgba(212,168,83,.3);color:var(--or);padding:.45rem 1.1rem;border-radius:30px;font-size:.85rem;font-family:'Josefin Sans',sans-serif;letter-spacing:.08em;text-decoration:none;transition:background .2s;" onmouseover="this.style.background='rgba(212,168,83,.3)'" onmouseout="this.style.background='rgba(212,168,83,.15)'">📍 Pernes-les-Fontaines</a>
@@ -850,7 +850,7 @@ footer{background:var(--verde-scuro);padding:3rem 4rem;display:flex;justify-cont
       </table>
       <p style="font-size:.75rem;color:rgba(255,255,255,.35);margin-top:.8rem;font-family:'Josefin Sans',sans-serif;">* Livraison gratuite dès le minimum requis atteint. Appelez-nous pour confirmer votre zone exacte.</p>
     </div>
-    <p class="reveal" style="color:rgba(255,255,255,.5);font-family:'Cormorant Garamond',serif;font-size:1rem;margin-bottom:1.5rem;">Vous n'êtes pas sûr d'être dans notre zone ? Appelez-nous !</p>
+    <p class="reveal" style="color:rgba(255,255,255,.5);font-family:'Josefin Sans',serif;font-size:1rem;margin-bottom:1.5rem;">Vous n'êtes pas sûr d'être dans notre zone ? Appelez-nous !</p>
     <a href="tel:0761083608" class="btn-white reveal" style="font-size:.75rem;" onclick="toggleCallPopup()">📞 Vérifier ma zone — 07 61 08 36 08</a>
   </div>
 </section>
@@ -897,9 +897,9 @@ footer{background:var(--verde-scuro);padding:3rem 4rem;display:flex;justify-cont
     </div>
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start;margin-bottom:4rem;" class="reveal">
       <div>
-        <p style="font-family:'Cormorant Garamond',serif;font-size:1.12rem;line-height:1.9;color:#3a3530;margin-bottom:1.2rem;">Tout a commencé en <strong>2008</strong>, avenue Pierre Sémard à Carpentras. L'idée était simple : proposer aux habitants du Comtat Venaissin une pizza <strong>vraiment artisanale</strong> — préparée chaque soir, avec une pâte maison travaillée à la main et des ingrédients frais sélectionnés chaque jour.</p>
-        <p style="font-family:'Cormorant Garamond',serif;font-size:1.12rem;line-height:1.9;color:#3a3530;margin-bottom:1.2rem;">Plus de <strong>15 ans plus tard</strong>, rien n'a changé dans l'essentiel. La pâte est toujours faite maison, sans congélation ni additifs. La garniture reste généreuse — parce qu'une pizza livrée doit arriver aussi bonne que sortie du four. Le four tourne <strong>7 jours sur 7</strong>, de 17h30 à 22h.</p>
-        <p style="font-family:'Cormorant Garamond',serif;font-size:1rem;font-style:italic;color:#5A5248;border-left:3px solid var(--rosso);padding-left:1rem;line-height:1.75;">« Le nom "Napoli" ? Un hommage à la ville qui a inventé la pizza. Mais notre recette est provençale — généreuse, ensoleillée, faite avec le cœur. »</p>
+        <p style="font-family:'Josefin Sans',serif;font-size:1.12rem;line-height:1.9;color:#3a3530;margin-bottom:1.2rem;">Tout a commencé en <strong>2008</strong>, avenue Pierre Sémard à Carpentras. L'idée était simple : proposer aux habitants du Comtat Venaissin une pizza <strong>vraiment artisanale</strong> — préparée chaque soir, avec une pâte maison travaillée à la main et des ingrédients frais sélectionnés chaque jour.</p>
+        <p style="font-family:'Josefin Sans',serif;font-size:1.12rem;line-height:1.9;color:#3a3530;margin-bottom:1.2rem;">Plus de <strong>15 ans plus tard</strong>, rien n'a changé dans l'essentiel. La pâte est toujours faite maison, sans congélation ni additifs. La garniture reste généreuse — parce qu'une pizza livrée doit arriver aussi bonne que sortie du four. Le four tourne <strong>7 jours sur 7</strong>, de 17h30 à 22h.</p>
+        <p style="font-family:'Josefin Sans',serif;font-size:1rem;font-style:italic;color:#5A5248;border-left:3px solid var(--rosso);padding-left:1rem;line-height:1.75;">« Le nom "Napoli" ? Un hommage à la ville qui a inventé la pizza. Mais notre recette est provençale — généreuse, ensoleillée, faite avec le cœur. »</p>
       </div>
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:.8rem;">
         <div style="background:var(--crema);border-radius:8px;padding:1.4rem;text-align:center;"><div style="font-family:'Cinzel',serif;font-size:2rem;font-weight:700;color:var(--rosso);">2008</div><div style="font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:#888;margin-top:.3rem;">Fondation</div></div>
@@ -1148,7 +1148,7 @@ footer{background:var(--verde-scuro);padding:3rem 4rem;display:flex;justify-cont
     <div class="form-section" id="section-2">
       <div class="ord-card">
         <div class="card-title"><span>🍕</span> Choisissez vos pizzas</div>
-        <p style="font-family:'Cormorant Garamond',serif;font-size:1rem;color:#aaa;margin-bottom:1.2rem;">Taille, quantité, et personnalisation disponibles pour chaque pizza.</p>
+        <p style="font-family:'Josefin Sans',serif;font-size:1rem;color:#aaa;margin-bottom:1.2rem;">Taille, quantité, et personnalisation disponibles pour chaque pizza.</p>
         <div class="cat-tabs" id="cat-tabs-wrap"></div>
         <div class="pizza-grid" id="pizza-list"></div>
       </div>
@@ -1162,7 +1162,7 @@ footer{background:var(--verde-scuro);padding:3rem 4rem;display:flex;justify-cont
     <div class="form-section" id="section-3">
       <div class="ord-card">
         <div class="card-title"><span>🥤</span> Boissons</div>
-        <p style="font-family:'Cormorant Garamond',serif;font-size:1rem;color:#aaa;margin-bottom:1.2rem;">Ajoutez des boissons (facultatif).</p>
+        <p style="font-family:'Josefin Sans',serif;font-size:1rem;color:#aaa;margin-bottom:1.2rem;">Ajoutez des boissons (facultatif).</p>
         <div class="drink-grid-ord" id="drink-grid"></div>
       </div>
       <div class="ord-card">
