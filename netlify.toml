@@ -73,3 +73,18 @@
   for = "/robots.txt"
   [headers.values]
     Cache-Control = "public, max-age=86400"
+
+[[headers]]
+  for = "/*.py"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow"
+
+[[headers]]
+  for = "/*.pyw"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow"
+
+[[headers]]
+  for = "/*.bat"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow"

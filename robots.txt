@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
 Sitemap: https://pizzanapolicarpentras.fr/sitemap.xml
+Sitemap: https://pizzanapolicarpentras.fr/sitemap-images.xml
