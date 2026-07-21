@@ -1114,10 +1114,16 @@ restart();
 // Zone minimum validation (1 grande = 1pt, 1 petite = 0.5pt)
 function getMinPizzasForCity(addr) {
   var a = addr.toLowerCase();
-  if (a.indexOf('mazan') !== -1 || a.indexOf('saint-didier') !== -1 || a.indexOf('st-didier') !== -1 || a.indexOf('st didier') !== -1) return 4;
-  if (a.indexOf('pernes') !== -1 || a.indexOf('aubignan') !== -1 || a.indexOf('loriol') !== -1 || a.indexOf('caromb') !== -1 || a.indexOf('monteux') !== -1) return 3;
-  if (a.indexOf('carpentras') !== -1 || a.indexOf('serres') !== -1 || a.indexOf('84200') !== -1) return 2;
-  return 2;
+  if (a.indexOf('mazan') !== -1 || a.indexOf('84380') !== -1) return 4;
+  if (a.indexOf('saint-didier') !== -1 || a.indexOf('st-didier') !== -1 || a.indexOf('st didier') !== -1 || a.indexOf('84210') !== -1) return 4;
+  if (a.indexOf('pernes') !== -1) return 3;
+  if (a.indexOf('aubignan') !== -1 || a.indexOf('84810') !== -1) return 3;
+  if (a.indexOf('loriol') !== -1 || a.indexOf('84870') !== -1) return 3;
+  if (a.indexOf('caromb') !== -1 || a.indexOf('84330') !== -1) return 3;
+  if (a.indexOf('monteux') !== -1 || a.indexOf('84170') !== -1) return 3;
+  if (a.indexOf('carpentras') !== -1 || a.indexOf('84200') !== -1) return 2;
+  if (a.indexOf('serres') !== -1) return 2;
+  return -1;
 }
 function getMinPizzasText(min) {
   return min + ' grandes pizzas (ou ' + (min * 2) + ' petites)';
@@ -1179,6 +1185,16 @@ if (_origNextStep) {
       var qtyEls = document.querySelectorAll('.qty-value');
       qtyEls.forEach(function(el) { totalPizzas += parseInt(el.textContent) || 0; });
 
+      // Check zone before proceeding
+      var addrEl2 = document.getElementById('client-adresse');
+      var modeLiv = document.getElementById('mode-livraison');
+      if (addrEl2 && modeLiv && modeLiv.classList && modeLiv.classList.contains('active')) {
+        var addr2 = addrEl2.value;
+        if (addr2 && getMinPizzasForCity(addr2) === -1) {
+          alert('Desole, nous ne livrons pas a cette adresse.\nVilles desservies : Carpentras, Serres, Pernes, Aubignan, Loriol, Caromb, Monteux, Mazan, Saint-Didier.');
+          return;
+        }
+      }
       // Show free bottle popup if 3+ pizzas and not already chosen
       if (totalPizzas >= 3 && !selectedFreeBottle) {
         document.getElementById('free-bottle-popup').style.display = 'flex';
@@ -1226,6 +1242,10 @@ if (_origEnvoyer) {
         }
       });
 
+      if (minPizzas === -1) {
+        alert('Desole, nous ne livrons pas a cette adresse.\nNous livrons uniquement a : Carpentras, Serres, Pernes-les-Fontaines, Aubignan, Loriol-du-Comtat, Caromb, Monteux, Mazan, Saint-Didier.\nVerifiez votre adresse ou choisissez A emporter.');
+        return;
+      }
       if (totalPoints < minPizzas && cityName) {
         alert('Minimum pour la livraison a ' + cityName + ' : ' + minPizzas + ' grandes pizzas (ou ' + (minPizzas * 2) + ' petites).\nVotre commande equivaut a ' + totalPoints + ' grande(s). Ajoutez des pizzas pour commander.');
         return;
