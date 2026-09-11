@@ -775,7 +775,7 @@ row.innerHTML = `
 <div class="pizza-main"> <div class="pizza-info"> <div class="pizza-name">${pizza.name}</div> <div class="pizza-ingr">${pizza.ingr}</div> </div> <div class="pizza-right">
 ${only30
 ? ``
-: `<select class="size-select" data-idx="${idx}"> <option value="30" ${order.size==='30'?'selected':''}>Grande — ${fmt(pizza.p30)}</option> <option value="26" ${order.size==='26'?'selected':''}>Petite — ${fmt(pizza.p26)}</option> </select>`}
+: `<select class="size-select" data-idx="${idx}" aria-label="Taille de la pizza"> <option value="30" ${order.size==='30'?'selected':''}>Grande — ${fmt(pizza.p30)}</option> <option value="26" ${order.size==='26'?'selected':''}>Petite — ${fmt(pizza.p26)}</option> </select>`}
 <div class="qty-group"> <button class="qty-btn ${hasQty?'':'plus'}" data-idx="${idx}" data-delta="${hasQty?'-1':'1'}">${hasQty?'−':'+'}</button> <span class="qty-val">${hasQty?order.qty:''}</span> <button class="qty-btn plus" data-idx="${idx}" data-delta="1" style="${hasQty?'':'display:none'}">+</button> </div> <button class="perso-btn" data-idx="${idx}">✏️ Perso</button> </div> <div class="pizza-price-tag">${priceDisp}</div> </div> <div class="perso-panel" id="perso-${idx}"> <span class="perso-label">Retirer un ingrédient (gratuit)</span> <div class="ingr-chips" id="chips-${idx}"></div>
 ${pizza.cat !== 'dessert' ? `
 <span class="perso-label">Ajouter un supplément <span style="color:var(--rouge);">+1€ / ingrédient</span></span> <div class="extras-grid" id="extras-${idx}"></div> <div class="extras-note">Les suppléments seront confirmés par téléphone.</div>
