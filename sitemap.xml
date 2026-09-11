@@ -7,12 +7,6 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://pizzanapolicarpentras.fr/cgv/</loc>
-    <lastmod>2026-09-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://pizzanapolicarpentras.fr/livraison-pizza-aubignan/</loc>
     <lastmod>2026-09-11</lastmod>
     <changefreq>weekly</changefreq>
@@ -61,19 +55,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://pizzanapolicarpentras.fr/livraison-pizza-sarrians/</loc>
-    <lastmod>2026-09-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://pizzanapolicarpentras.fr/livraison-pizza-serres/</loc>
-    <lastmod>2026-09-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://pizzanapolicarpentras.fr/mentions-legales/</loc>
     <lastmod>2026-09-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -86,12 +68,6 @@
   </url>
   <url>
     <loc>https://pizzanapolicarpentras.fr/pizzeria-carpentras/</loc>
-    <lastmod>2026-09-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://pizzanapolicarpentras.fr/politique-de-confidentialite/</loc>
     <lastmod>2026-09-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
