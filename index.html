@@ -1065,7 +1065,9 @@ method:'POST',
 headers:{'Content-Type':'application/json','Accept':'application/json'},
 body:JSON.stringify({
 access_key:'048c24da-8e15-492b-8ae3-4959e2bb1fd8',
-subject:'🍕 Nouvelle commande – '+fullNom+' ('+euroFmt(total)+')',
+from_name:'Commandes Pizza Napoli',
+replyto:'carpentraspizzanapoli@gmail.com',
+subject:'COMMANDE SITE - '+fullNom+' ('+euroFmt(total)+')',
 message: plainMsg
 })
 }).catch(()=>{});
