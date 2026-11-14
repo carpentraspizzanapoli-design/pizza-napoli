@@ -59,7 +59,7 @@ body{font-family:'Josefin Sans',sans-serif;background:var(--crema);color:var(--b
 .promo-banner{background:var(--verde);color:white;text-align:center;padding:.55rem 1rem;font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;font-weight:600;}
 .promo-banner span{color:var(--oro-clair);}
 /* LOADER — drapeau italien */
-#loader{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;z-index:9999;transition:opacity .8s ease,visibility .8s;overflow:hidden;}
+#loader{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;z-index:9999;transition:opacity .35s ease,visibility .35s;overflow:hidden;}
 #loader.hide{opacity:0;visibility:hidden;}
 .loader-flag{position:absolute;inset:0;display:flex;}
 .loader-flag .lf-vert{flex:1;background:#009246;}
@@ -120,11 +120,11 @@ nav{width:100%;padding:1.2rem 4rem;display:flex;align-items:center;justify-conte
 .hero{height:100vh;background:linear-gradient(to bottom,rgba(0,0,0,.58) 0%,rgba(0,0,0,.44) 40%,rgba(0,0,0,.66) 100%),url('hero-mozza.webp') center/cover no-repeat;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;position:relative;overflow:hidden;}
 .hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at center,transparent 30%,rgba(0,0,0,.35) 100%);}
 .hero::after{content:'';position:absolute;bottom:0;left:0;right:0;height:5px;background:linear-gradient(to right,var(--verde) 33.3%,var(--blanc) 33.3%,var(--blanc) 66.6%,var(--rosso) 66.6%);z-index:3;}
-.hero-badge{font-size:.72rem;letter-spacing:.28em;text-transform:uppercase;color:var(--oro-clair);background:rgba(0,0,0,.55);border:1px solid rgba(200,151,42,.7);padding:.5rem 1.8rem;margin-bottom:1.5rem;opacity:0;animation:fadeUp .8s ease forwards;animation-delay:1.8s;position:relative;z-index:2;text-shadow:0 2px 6px rgba(0,0,0,.9);font-weight:600;}
-.hero h1{font-family:'Cinzel',serif;font-size:clamp(2.8rem,7vw,6.5rem);font-style:normal;color:var(--blanc);line-height:1.05;margin-bottom:.3em;opacity:0;animation:fadeUp .9s ease forwards;animation-delay:2s;position:relative;z-index:2;text-shadow:0 4px 30px rgba(0,0,0,.5);}
+.hero-badge{font-size:.72rem;letter-spacing:.28em;text-transform:uppercase;color:var(--oro-clair);background:rgba(0,0,0,.55);border:1px solid rgba(200,151,42,.7);padding:.5rem 1.8rem;margin-bottom:1.5rem;opacity:0;animation:fadeUp .8s ease forwards;animation-delay:.75s;position:relative;z-index:2;text-shadow:0 2px 6px rgba(0,0,0,.9);font-weight:600;}
+.hero h1{font-family:'Cinzel',serif;font-size:clamp(2.8rem,7vw,6.5rem);font-style:normal;color:var(--blanc);line-height:1.05;margin-bottom:.3em;opacity:0;animation:fadeUp .9s ease forwards;animation-delay:.9s;position:relative;z-index:2;text-shadow:0 4px 30px rgba(0,0,0,.5);}
 .hero h1 em{color:var(--oro-clair);font-style:normal;display:block;}
-.hero-sub{font-family:'Josefin Sans',serif;font-size:clamp(1.1rem,2.5vw,1.6rem);color:rgba(255,255,255,.85);letter-spacing:.1em;margin-bottom:2.5rem;opacity:0;animation:fadeUp .9s ease forwards;animation-delay:2.2s;position:relative;z-index:2;}
-.hero-btns{display:flex;gap:1rem;flex-wrap:wrap;justify-content:center;opacity:0;animation:fadeUp .9s ease forwards;animation-delay:2.4s;position:relative;z-index:2;}
+.hero-sub{font-family:'Josefin Sans',serif;font-size:clamp(1.1rem,2.5vw,1.6rem);color:rgba(255,255,255,.85);letter-spacing:.1em;margin-bottom:2.5rem;opacity:0;animation:fadeUp .9s ease forwards;animation-delay:1.05s;position:relative;z-index:2;}
+.hero-btns{display:flex;gap:1rem;flex-wrap:wrap;justify-content:center;opacity:0;animation:fadeUp .9s ease forwards;animation-delay:1.2s;position:relative;z-index:2;}
 .btn-primary{background:var(--rouge);color:white;padding:1.2rem 3rem;font-size:1rem;letter-spacing:.2em;text-transform:uppercase;text-decoration:none;font-weight:600;transition:all .3s;border:2px solid var(--rouge);}
 .btn-primary:hover{background:var(--rouge-fonce);border-color:var(--rouge-fonce);transform:translateY(-2px);box-shadow:0 8px 25px rgba(192,57,43,.4);}
 .btn-outline{background:transparent;color:white;padding:1.2rem 3rem;font-size:1rem;letter-spacing:.2em;text-transform:uppercase;text-decoration:none;font-weight:600;border:2px solid rgba(255,255,255,.6);transition:all .3s;}
@@ -485,7 +485,7 @@ Vérifiez votre commande ci-dessous puis cliquez sur <strong>Envoyer</strong>. N
 </div> <div id="call-popup"> <span class="cp-close" onclick="toggleCallPopup()">✕</span> <div class="cp-label">📞 Appelez-nous</div> <a href="tel:0761083608" class="cp-num" style="text-decoration:none;color:inherit;" onclick="toggleCallPopup()">07 61 08 36 08</a> <a href="tel:0761083608" class="cp-call" onclick="toggleCallPopup()">Composer le numéro</a>
 </div> <script>
 // Loader
-window.addEventListener('load',()=>{setTimeout(()=>document.getElementById('loader').classList.add('hide'),1200);});
+window.addEventListener('load',()=>{setTimeout(()=>document.getElementById('loader').classList.add('hide'),350);});
 // Open/Closed status
 function updateStatus(){
 const pill=document.getElementById('statusPill'),txt=document.getElementById('statusText');
