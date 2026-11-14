@@ -1252,5 +1252,6 @@ if(window.gtag)gtag('consent','update',{'analytics_storage':v==='1'?'granted':'d
 document.getElementById('consent-yes').addEventListener('click',function(){rep('1');});
 document.getElementById('consent-no').addEventListener('click',function(){rep('0');});})();</script>
 <script>function commanderDepuisHash(){if(location.hash==='#commander'&&typeof openCommander==='function'){openCommander();}}window.addEventListener('hashchange',commanderDepuisHash);window.addEventListener('load',commanderDepuisHash);</script>
+<script>function libellerCommander(){var d=new Date();if(d.getHours()*60+d.getMinutes()<17*60+30)return;document.querySelectorAll('a[onclick*="openCommander"]').forEach(function(b){var t=b.textContent.trim();if(b.classList.contains('social-btn'))return;if(t.indexOf('🍕')!==0&&t!=='Commander maintenant')return;b.textContent='📞 Appeler pour commander — 07 61 08 36 08';b.setAttribute('href','tel:0761083608');b.setAttribute('onclick','');});}window.addEventListener('load',libellerCommander);</script>
 </body>
 </html>
