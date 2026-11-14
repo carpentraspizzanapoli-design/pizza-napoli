@@ -1,11 +1,91 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-<url><loc>https://pizzanapolicarpentras.fr/</loc>
-<image:image><image:loc>https://pizzanapolicarpentras.fr/hero1.webp</image:loc><image:title>Pizza Napoli Carpentras</image:title></image:image>
-<image:image><image:loc>https://pizzanapolicarpentras.fr/hero2.webp</image:loc><image:title>Pizza artisanale Carpentras</image:title></image:image>
-<image:image><image:loc>https://pizzanapolicarpentras.fr/hero3.webp</image:loc><image:title>Pizzeria livraison Carpentras</image:title></image:image>
-<image:image><image:loc>https://pizzanapolicarpentras.fr/hero4.webp</image:loc><image:title>Livraison pizza domicile</image:title></image:image>
-<image:image><image:loc>https://pizzanapolicarpentras.fr/hero5.webp</image:loc><image:title>Pizza Napoli Vaucluse</image:title></image:image>
-<image:image><image:loc>https://pizzanapolicarpentras.fr/Tartufo.webp</image:loc><image:title>Pizza Tartufo truffe</image:title></image:image>
-<image:image><image:loc>https://pizzanapolicarpentras.fr/saint-jacques-.webp</image:loc><image:title>Pizza Saint-Jacques</image:title></image:image>
-</url></urlset>
+  <url>
+    <loc>https://pizzanapolicarpentras.fr/</loc>
+    <image:image><image:loc>https://pizzanapolicarpentras.fr/hero-mozza.webp</image:loc><image:title>Pizza Napoli Carpentras — pizzeria artisanale</image:title></image:image>
+    <image:image><image:loc>https://pizzanapolicarpentras.fr/Tartufo.webp</image:loc><image:title>Notre pizzeria</image:title></image:image>
+    <image:image><image:loc>https://pizzanapolicarpentras.fr/20250425_192921.jpg</image:loc><image:title>Pizza Milano courgettes Pizza Napoli Carpentras</image:title></image:image>
+    <image:image><image:loc>https://pizzanapolicarpentras.fr/20230926_202527.jpg</image:loc><image:title>Pizza artisanale Pizza Napoli Carpentras</image:title></image:image>
+    <image:image><image:loc>https://pizzanapolicarpentras.fr/saint-jacques-.webp</image:loc><image:title>Pizza Saint Jacques fruits de mer Carpentras</image:title></image:image>
+    <image:image><image:loc>https://pizzanapolicarpentras.fr/20240123_201507.jpg</image:loc><image:title>Pizza Mozza di Bufala jambon Carpentras</image:title></image:image>
+    <image:image><image:loc>https://pizzanapolicarpentras.fr/20230926_203901.jpg</image:loc><image:title>Pizza Végétarienne champignons Carpentras</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://pizzanapolicarpentras.fr/blog/que-faire-aubignan-ce-soir/</loc>
+    <image:image><image:loc>https://pizzanapolicarpentras.fr/livraison-pizza-aubignan/img/ville.jpg</image:loc><image:title>Aubignan, Vaucluse</image:title></image:image>
+    <image:image><image:loc>https://pizzanapolicarpentras.fr/blog/que-faire-aubignan-ce-soir/img/cave.webp</image:loc><image:title>Cave vinicole Vaucluse extérieur</image:title></image:image>
+    <image:image><image:loc>https://pizzanapolicarpentras.fr/blog/que-faire-aubignan-ce-soir/img/dentelles.webp</image:loc><image:title>Dentelles de Montmirail village Vaucluse</image:title></image:image>
+    <image:image><image:loc>https://pizzanapolicarpentras.fr/blog/que-faire-aubignan-ce-soir/img/vignes.webp</image:loc><image:title>Vignes oliviers Vaucluse Provence</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://pizzanapolicarpentras.fr/blog/que-faire-caromb-ce-soir/</loc>
+    <image:image><image:loc>https://pizzanapolicarpentras.fr/livraison-pizza-caromb/img/ville.jpg</image:loc><image:title>Caromb, Vaucluse</image:title></image:image>
+    <image:image><image:loc>https://pizzanapolicarpentras.fr/blog/que-faire-caromb-ce-soir/img/lac.webp</image:loc><image:title>Lac du Paty Caromb Vaucluse baignade</image:title></image:image>
+    <image:image><image:loc>https://pizzanapolicarpentras.fr/blog/que-faire-caromb-ce-soir/img/village.webp</image:loc><image:title>Porte médiévale village Vaucluse architecture</image:title></image:image>
+    <image:image><image:loc>https://pizzanapolicarpentras.fr/blog/que-faire-caromb-ce-soir/img/dentelles.webp</image:loc><image:title>Dentelles de Montmirail cascade Lafare</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://pizzanapolicarpentras.fr/blog/que-faire-carpentras-ce-soir/</loc>
+    <image:image><image:loc>https://pizzanapolicarpentras.fr/blog/que-faire-carpentras-ce-soir/img/cathedrale.webp</image:loc><image:title>Cathédrale Saint-Siffrein Carpentras</image:title></image:image>
+    <image:image><image:loc>https://pizzanapolicarpentras.fr/blog/que-faire-carpentras-ce-soir/img/arc_romain.webp</image:loc><image:title>Arc de Triomphe romain Carpentras</image:title></image:image>
+    <image:image><image:loc>https://pizzanapolicarpentras.fr/blog/que-faire-carpentras-ce-soir/img/porte_orange.webp</image:loc><image:title>Porte d'Orange Carpentras XIVe siècle</image:title></image:image>
+    <image:image><image:loc>https://pizzanapolicarpentras.fr/blog/que-faire-carpentras-ce-soir/img/synagogue.webp</image:loc><image:title>Synagogue de Carpentras, plus ancienne synagogue de France</image:title></image:image>
+    <image:image><image:loc>https://pizzanapolicarpentras.fr/blog/que-faire-carpentras-ce-soir/img/passage_boyer.webp</image:loc><image:title>Passage Boyer Carpentras</image:title></image:image>
+    <image:image><image:loc>https://pizzanapolicarpentras.fr/blog/que-faire-carpentras-ce-soir/img/place_carpentras.webp</image:loc><image:title>Place de Carpentras</image:title></image:image>
+    <image:image><image:loc>https://pizzanapolicarpentras.fr/blog/que-faire-carpentras-ce-soir/img/marche.webp</image:loc><image:title>Marché de Carpentras</image:title></image:image>
+    <image:image><image:loc>https://pizzanapolicarpentras.fr/blog/que-faire-carpentras-ce-soir/img/berlingot.webp</image:loc><image:title>Berlingots de Carpentras, spécialité locale</image:title></image:image>
+    <image:image><image:loc>https://pizzanapolicarpentras.fr/blog/que-faire-carpentras-ce-soir/img/cinema.webp</image:loc><image:title>Soirée cinéma projecteur film</image:title></image:image>
+    <image:image><image:loc>https://pizzanapolicarpentras.fr/blog/que-faire-carpentras-ce-soir/img/football.webp</image:loc><image:title>Coupe de la Ligue des Champions football</image:title></image:image>
+    <image:image><image:loc>https://pizzanapolicarpentras.fr/blog/que-faire-carpentras-ce-soir/img/mont_ventoux.webp</image:loc><image:title>Mont Ventoux et Dentelles de Montmirail</image:title></image:image>
+    <image:image><image:loc>https://pizzanapolicarpentras.fr/blog/que-faire-carpentras-ce-soir/img/dentelles.webp</image:loc><image:title>Dentelles de Montmirail, Vaucluse</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://pizzanapolicarpentras.fr/blog/que-faire-loriol-du-comtat-ce-soir/</loc>
+    <image:image><image:loc>https://pizzanapolicarpentras.fr/livraison-pizza-loriol-du-comtat/img/ville.jpg</image:loc><image:title>Loriol-du-Comtat, Vaucluse</image:title></image:image>
+    <image:image><image:loc>https://pizzanapolicarpentras.fr/blog/que-faire-loriol-du-comtat-ce-soir/img/aqueduc.webp</image:loc><image:title>Aqueduc des 5 Cantons Loriol-du-Comtat</image:title></image:image>
+    <image:image><image:loc>https://pizzanapolicarpentras.fr/blog/que-faire-loriol-du-comtat-ce-soir/img/village.webp</image:loc><image:title>Village médiéval Comtat Venaissin vue ensemble</image:title></image:image>
+    <image:image><image:loc>https://pizzanapolicarpentras.fr/blog/que-faire-loriol-du-comtat-ce-soir/img/cerisiers.webp</image:loc><image:title>Vignes oliviers campagne Vaucluse Provence</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://pizzanapolicarpentras.fr/blog/que-faire-mazan-ce-soir/</loc>
+    <image:image><image:loc>https://pizzanapolicarpentras.fr/livraison-pizza-mazan/img/ville.jpg</image:loc><image:title>Mazan, Vaucluse</image:title></image:image>
+    <image:image><image:loc>https://pizzanapolicarpentras.fr/blog/que-faire-mazan-ce-soir/img/arc.webp</image:loc><image:title>Patrimoine romain Vaucluse</image:title></image:image>
+    <image:image><image:loc>https://pizzanapolicarpentras.fr/blog/que-faire-mazan-ce-soir/img/chateau.webp</image:loc><image:title>Château de Mazan Vaucluse</image:title></image:image>
+    <image:image><image:loc>https://pizzanapolicarpentras.fr/blog/que-faire-mazan-ce-soir/img/vignoble.webp</image:loc><image:title>Vignoble AOC Ventoux Vaucluse</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://pizzanapolicarpentras.fr/blog/que-faire-monteux-ce-soir/</loc>
+    <image:image><image:loc>https://pizzanapolicarpentras.fr/livraison-pizza-monteux/img/ville.jpg</image:loc><image:title>Monteux, Vaucluse</image:title></image:image>
+    <image:image><image:loc>https://pizzanapolicarpentras.fr/blog/que-faire-monteux-ce-soir/img/chapelle.webp</image:loc><image:title>Panorama Comtat Venaissin Mont Ventoux</image:title></image:image>
+    <image:image><image:loc>https://pizzanapolicarpentras.fr/blog/que-faire-monteux-ce-soir/img/lavande.webp</image:loc><image:title>Lavande en fleur Provence été</image:title></image:image>
+    <image:image><image:loc>https://pizzanapolicarpentras.fr/blog/que-faire-monteux-ce-soir/img/place.webp</image:loc><image:title>Place provençale village Vaucluse platanes</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://pizzanapolicarpentras.fr/blog/que-faire-pernes-les-fontaines-ce-soir/</loc>
+    <image:image><image:loc>https://pizzanapolicarpentras.fr/livraison-pizza-pernes-les-fontaines/img/ville.jpg</image:loc><image:title>Pernes-les-Fontaines, Vaucluse</image:title></image:image>
+    <image:image><image:loc>https://pizzanapolicarpentras.fr/blog/que-faire-pernes-les-fontaines-ce-soir/img/fontaine.webp</image:loc><image:title>Fontaine Reboul Pernes-les-Fontaines</image:title></image:image>
+    <image:image><image:loc>https://pizzanapolicarpentras.fr/blog/que-faire-pernes-les-fontaines-ce-soir/img/tour_ferrande.webp</image:loc><image:title>Tour Ferrande Pernes-les-Fontaines</image:title></image:image>
+    <image:image><image:loc>https://pizzanapolicarpentras.fr/blog/que-faire-pernes-les-fontaines-ce-soir/img/porte_nd.webp</image:loc><image:title>Porte Notre-Dame Pernes-les-Fontaines</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://pizzanapolicarpentras.fr/blog/que-faire-saint-didier-ce-soir/</loc>
+    <image:image><image:loc>https://pizzanapolicarpentras.fr/livraison-pizza-saint-didier/img/ville.jpg</image:loc><image:title>Saint-Didier, Vaucluse</image:title></image:image>
+    <image:image><image:loc>https://pizzanapolicarpentras.fr/blog/que-faire-saint-didier-ce-soir/img/fontaine.webp</image:loc><image:title>Fontaine Saint-Didier Vaucluse</image:title></image:image>
+    <image:image><image:loc>https://pizzanapolicarpentras.fr/blog/que-faire-saint-didier-ce-soir/img/chateau.webp</image:loc><image:title>Château Provence Vaucluse architecture</image:title></image:image>
+    <image:image><image:loc>https://pizzanapolicarpentras.fr/blog/que-faire-saint-didier-ce-soir/img/plateau.webp</image:loc><image:title>Mont Ventoux plateau de Vaucluse panorama</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://pizzanapolicarpentras.fr/blog/que-faire-sarrians-ce-soir/</loc>
+    <image:image><image:loc>https://pizzanapolicarpentras.fr/livraison-pizza-sarrians/img/ville.jpg</image:loc><image:title>Sarrians, Vaucluse</image:title></image:image>
+    <image:image><image:loc>https://pizzanapolicarpentras.fr/blog/que-faire-sarrians-ce-soir/img/place.webp</image:loc><image:title>Vignobles Côtes-du-Rhône paysage Vaucluse</image:title></image:image>
+    <image:image><image:loc>https://pizzanapolicarpentras.fr/blog/que-faire-sarrians-ce-soir/img/cave.webp</image:loc><image:title>Cave vins Côtes-du-Rhône bouteille</image:title></image:image>
+    <image:image><image:loc>https://pizzanapolicarpentras.fr/blog/que-faire-sarrians-ce-soir/img/riviere.webp</image:loc><image:title>Dentelles de Montmirail paysage Vaucluse</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://pizzanapolicarpentras.fr/blog/que-faire-serres-ce-soir/</loc>
+    <image:image><image:loc>https://pizzanapolicarpentras.fr/blog/que-faire-carpentras-ce-soir/img/mont_ventoux.webp</image:loc><image:title>Le Mont Ventoux vu depuis le Comtat Venaissin</image:title></image:image>
+    <image:image><image:loc>https://pizzanapolicarpentras.fr/blog/que-faire-carpentras-ce-soir/img/cathedrale.webp</image:loc><image:title>Cathédrale Saint-Siffrein à Carpentras</image:title></image:image>
+    <image:image><image:loc>https://pizzanapolicarpentras.fr/blog/que-faire-carpentras-ce-soir/img/marche.webp</image:loc><image:title>Le marché provençal de Carpentras</image:title></image:image>
+    <image:image><image:loc>https://pizzanapolicarpentras.fr/blog/que-faire-carpentras-ce-soir/img/dentelles.webp</image:loc><image:title>Les Dentelles de Montmirail, Vaucluse</image:title></image:image>
+  </url>
+</urlset>
