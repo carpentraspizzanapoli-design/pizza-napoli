@@ -181,6 +181,23 @@ footer div[style*="color:#666"] a{color:#E0E0E0 !important;}
 body > div[style*="color:#666"] a{color:#5A5A5A !important;}
 footer p{color:rgba(255,255,255,.72) !important;}
 footer p a{color:rgba(255,255,255,.85) !important;}
+.status-pill.open,.status-pill.open *{color:#1A5E2A !important;}
+.status-pill:not(.open),.status-pill:not(.open) *{color:#A01A17 !important;}
+.info-label,.pom-title,.pom-body strong{color:#FFF0CC !important;}
+.cp-call{background:#157A42 !important;}
+.price-size{color:rgba(255,255,255,.65) !important;}
+.card-tag.tag-rosso{color:#A01A17 !important;}
+.card-tag.tag-verde{color:#1A5E2A !important;}
+[style*="color:#aaa"],[style*="color:#999"],[style*="color:#888"],[style*="color:#bbb"],td.bad,.blog-meta,.pizza-desc,.avis-author,.cp-label{color:#5A5A5A !important;}
+.t-sub{color:rgba(255,255,255,.8) !important;}
+.l{color:#fff !important;}
+.pom-text strong,.pom-text b{color:#FFF0CC !important;}
+[style*="color:rgba(255,255,255,.3"],[style*="color:rgba(255,255,255,.4"],[style*="color:rgba(255,255,255,.5"],[style*="color:rgba(255,255,255,.6"]{color:rgba(255,255,255,.82) !important;}
+.st-count{color:rgba(255,255,255,.82) !important;}
+.step-num{color:#fff !important;}
+.promo-banner span,.promo-banner b{color:#FFE9B0 !important;}
+p[style*="color:rgba(255,255,255,.9"]{color:#fff !important;}
+footer [style*="color:#aaa"],footer [style*="color:#999"],footer [style*="color:#888"],footer [style*="color:#bbb"]{color:rgba(255,255,255,.78) !important;}
 @media(max-width:640px){
  .infos-bar{grid-template-columns:1fr !important;padding:1.4rem 1rem !important;}
  .infos-bar .info-item{min-width:0 !important;flex-wrap:wrap;padding:1rem 1.1rem !important;}
@@ -198,18 +215,21 @@ footer p a{color:rgba(255,255,255,.85) !important;}
  .float-btn svg{width:21px !important;height:21px !important;}
  footer{padding-bottom:4.5rem !important;}
  body > div[style*="color:#666"]{padding-bottom:4.5rem !important;}
- main *,footer *{min-width:0;}
+ main div,main section,main ul,main ol,main li,main figure,main table,main form,main aside,footer div,footer ul,footer nav,footer form{min-width:0;}
+ .steps li{display:block !important;position:relative;padding-left:3.2rem !important;}
+ .steps li::before{position:absolute !important;left:.9rem;top:.8rem;}
  .contact-list a,.ct a,.ct p,a[href^="tel:"],.commander-inline a{white-space:normal !important;}
  .promo-banner{white-space:normal !important;padding:.55rem .6rem !important;font-size:.64rem !important;line-height:1.55;}
  .promo-banner span{display:inline !important;white-space:normal !important;}
  main .reveal, .about-features, .about-text{grid-template-columns:1fr !important;}
  .about-img-wrap{max-width:100% !important;overflow:hidden;}
  .testi-grid{max-width:100%;}
- #order-overlay input, #order-overlay select, #order-overlay textarea{font-size:16px !important;}
+ #order-overlay input, #order-overlay select, #order-overlay textarea, #menuSearch, input[type=search]{font-size:16px !important;}
+ .article-body table,main table{display:block;overflow-x:auto;max-width:100%;-webkit-overflow-scrolling:touch;}
  nav a, footer a, .nav-links a{min-height:24px;display:inline-flex;align-items:center;}
  .price-size,.section-tag,.menu-badge,.testi-author,.step-num,.label,.hero-tel-label,.counter-lbl,.info-label,.hero-badge,.promo-banner,#order-overlay label,small,figcaption{font-size:12px !important;}
  [style*="font-size:.4"],[style*="font-size:.5"],[style*="font-size:.6"],[style*="font-size:.70"],[style*="font-size:.71"],[style*="font-size:.72"],[style*="font-size:.73"],[style*="font-size:.74"],[style*="font-size:.7r"],[style*="font-size:.7e"],
- .menu-tab,.footer-copy,.addr-maps-btn,.t-sub,.st-info,.st-count,.cp-label,.status-pill,.status-pill span,.nc,.hb,.l,.cvi h3,.hero-tag,.info-title,.pizza-desc,.nav-cta,.nav-links a,th{font-size:12px !important;}
+ .menu-tab,.footer-copy,.addr-maps-btn,.t-sub,.st-info,.st-count,.cp-label,.status-pill,.status-pill span,.nc,.hb,.l,.cvi h3,.hero-tag,.info-title,.pizza-desc,.nav-cta,.nav-links a,th,.card-tag{font-size:12px !important;}
  div > a:not([class]),strong > a:not([class]){padding-top:6px !important;padding-bottom:6px !important;}
  .testi-dot{width:24px !important;height:24px !important;padding:0 !important;background:transparent !important;border-radius:0 !important;position:relative;}
  .testi-dot::before{content:"";position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:9px;height:9px;border-radius:50%;background:rgba(0,0,0,.18);}
@@ -219,7 +239,24 @@ footer p a{color:rgba(255,255,255,.85) !important;}
  .hero-btns{flex-wrap:wrap;max-width:100%;}
  .hero-btns .btn-primary,.hero-btns .btn-outline{white-space:normal !important;line-height:1.35;max-width:100%;box-sizing:border-box;text-align:center;letter-spacing:.06em !important;padding:.85rem 1rem !important;}
 }
+@media(max-height:520px) and (orientation:landscape){
+ .hero{height:auto !important;min-height:0 !important;padding-top:calc(var(--haut-entete,197px) + 1.2rem) !important;padding-bottom:2rem !important;}
+ .hero-panneau{max-width:100% !important;box-sizing:border-box;}
+ .price-size,.section-tag,.menu-badge,.testi-author,.step-num,.label,.hero-tel-label,.counter-lbl,.info-label,.hero-badge,.promo-banner,.menu-tab,.footer-copy,.addr-maps-btn,.t-sub,.st-info,.st-count,.cp-label,.status-pill,.status-pill span,.nc,.hb,.l,.cvi h3,.hero-tag,.info-title,.pizza-desc,.nav-cta,.nav-links a,th,.card-tag,[style*="font-size:.4"],[style*="font-size:.5"],[style*="font-size:.6"],[style*="font-size:.70"],[style*="font-size:.71"],[style*="font-size:.72"],[style*="font-size:.73"],[style*="font-size:.74"],[style*="font-size:.7r"],[style*="font-size:.7e"],#order-overlay label,small,figcaption{font-size:12px !important;}
+ #order-overlay input,#order-overlay select,#order-overlay textarea,#menuSearch,input[type=search]{font-size:16px !important;}
+ .float-group{flex-direction:row !important;bottom:.5rem !important;right:.5rem !important;gap:.5rem !important;}
+ .float-btn{width:42px !important;height:42px !important;}
+ .float-btn svg{width:19px !important;height:19px !important;}
+ .testi-dot{width:24px !important;height:24px !important;padding:0 !important;background:transparent !important;border-radius:0 !important;position:relative;}
+ .testi-dot::before{content:"";position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:9px;height:9px;border-radius:50%;background:rgba(0,0,0,.18);}
+ .testi-dot.active::before{width:22px;border-radius:5px;background:var(--oro);}
+ .steps li{display:block !important;position:relative;padding-left:3.2rem !important;}
+ .steps li::before{position:absolute !important;left:.9rem;top:.8rem;}
+ .article-body table,main table{display:block;overflow-x:auto;max-width:100%;}
+}
 </style>
+<meta name="theme-color" content="#00703C">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 </head>
 <body>
 <a href="#main-content" class="skip-link">Aller au contenu</a>
